@@ -1,0 +1,27 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hbtec-logging"
+version = "0.1.0"
+description = ""
+authors = [
+    "Antonio Talón <antonio.talon@gmail.com>",
+]
+maintainers = [
+    "Antonio Talón <antonio.talon@gmail.com>",
+]
+keywords = [ ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "es/hbtec/logging", from = "src" },
+    { include = "pyarmor_runtime_000000", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hbtec-tools = { git = "https://github.com/atalon/dist__hbtec-tools.git", tag = "v0.1.0" }
